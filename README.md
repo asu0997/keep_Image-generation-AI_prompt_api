@@ -12,5 +12,8 @@ source [仮想環境名]/bin/activate
 # 開始
 sh start.sh
 
+# mysql-container内のMySQLに接続する
+docker exec -it mysql-container mysql -u root -p
+
 # 終了
 sh stop.sh
