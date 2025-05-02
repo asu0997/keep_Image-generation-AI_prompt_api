@@ -4,3 +4,4 @@ sqlalchemy
 pymysql
 python-multipart
 flake8
+mysql-connector-python
