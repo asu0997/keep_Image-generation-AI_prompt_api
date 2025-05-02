@@ -17,7 +17,6 @@ def read_root():
 
 @app.post("/insert_ImagePrompt/")
 def insert_image_prompt(
-    id= Query(...),
     image_url = Query(...),
     model_name = Query(...),
     prompt = Query(...),
