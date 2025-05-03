@@ -22,7 +22,7 @@ def insert_image_prompt(
     prompt = Query(...),
     negative_prompt = Query(...)
 ):
-    success = ImagePrompt.insert_ImagePrompt(id, image_url, model_name, prompt, negative_prompt)
+    success = ImagePrompt.insert_ImagePrompt(image_url, model_name, prompt, negative_prompt)
     return {"result": "success" if success else "failure"}
 
 

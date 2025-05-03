@@ -70,7 +70,7 @@ def get_ImagePrompt():
         return []
 
 
-def insert_ImagePrompt(id, image_url, model_name, prompt, negative_prompt):
+def insert_ImagePrompt(image_url, model_name, prompt, negative_prompt):
     '''
     ImagePromptに新しいデータを追加
     Parameters
@@ -92,7 +92,6 @@ def insert_ImagePrompt(id, image_url, model_name, prompt, negative_prompt):
         session = get_db_session()
         model_object = model.ImagePrompt
         data_dict = {
-            "id": id,
             "image_url": image_url,
             "model_name": model_name,
             "prompt": prompt,
