@@ -3,6 +3,7 @@ from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
 
+
 class ImagePrompt(Base):
     __tablename__ = 'image_prompts'
 

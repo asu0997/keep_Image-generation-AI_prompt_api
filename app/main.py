@@ -12,12 +12,13 @@ def read_root():
 
 @app.post("/insert_ImagePrompt/")
 def insert_image_prompt(
-    image_url = Query(...),
-    model_name = Query(...),
-    prompt = Query(...),
-    negative_prompt = Query(...)
+    image_url=Query(...),
+    model_name=Query(...),
+    prompt=Query(...),
+    negative_prompt=Query(...)
 ):
-    success = ImagePrompt.insert_ImagePrompt(image_url, model_name, prompt, negative_prompt)
+    success = ImagePrompt.insert_ImagePrompt(
+        image_url, model_name, prompt, negative_prompt)
     return {"result": "success" if success else "failure"}
 
 

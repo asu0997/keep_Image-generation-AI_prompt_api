@@ -22,7 +22,10 @@ def get_db_session(echo_mode=False):
     rds_user = 'root'
     rds_password = 'mysql'
     # 接続文字列作成
-    db_url = f'mysql+mysqlconnector://{rds_user}:{rds_password}@{rds_host}:{rds_port}/{database_name}?charset=utf8'
+    db_url = (
+        f"mysql+mysqlconnector://{rds_user}:{rds_password}"
+        f"@{rds_host}:{rds_port}/{database_name}?charset=utf8"
+    )
     engine = create_engine(db_url, echo=echo_mode)
     # DBセッション取得
     Session = sessionmaker(bind=engine)
