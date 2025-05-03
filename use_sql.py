@@ -24,7 +24,7 @@ def use_sql(sql: int):
     conn.close()
 
 
-add_sql = """
+create_table_image_prompts_sql = """
 CREATE TABLE image_prompts (
     id INT AUTO_INCREMENT PRIMARY KEY,
     image_url VARCHAR(255) NOT NULL,
@@ -34,4 +34,4 @@ CREATE TABLE image_prompts (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 """
 
-use_sql(add_sql)
+use_sql(create_table_image_prompts_sql)
