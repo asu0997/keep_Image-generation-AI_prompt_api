@@ -5,11 +5,6 @@ import ImagePrompt
 app = FastAPI()
 
 
-@app.get("/")
-def read_root():
-    return {"message": "Hello!"}
-
-
 @app.get("/get_ImagePrompt/")
 def read_root():
     return ImagePrompt.get_ImagePrompt()
