@@ -9,6 +9,9 @@ python3 -m venv [仮想環境名]
 # 仮想環境を立ち上げる
 source [仮想環境名]/bin/activate
 
+# パッケージのインストール
+pip install -r app/requirements.txt
+
 # 開始
 sh start.sh
 
