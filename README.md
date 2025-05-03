@@ -20,6 +20,13 @@ sh start.sh
 
 # mysql-container内のMySQLに接続する
 docker exec -it mysql-container mysql -u root -p
+# imagen_db
+CREATE DATABASE imagegen_db;
+# 
+python use_sql.py
+
+# 
+http://localhost:8000/docs
 
 # 終了
 sh stop.sh
