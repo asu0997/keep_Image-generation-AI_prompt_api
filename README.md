@@ -20,12 +20,13 @@ sh start.sh
 
 # mysql-container内のMySQLに接続する
 docker exec -it mysql-container mysql -u root -p
-# imagen_db
+# データベースimagegen_dbを作成
 CREATE DATABASE imagegen_db;
-# 
+
+# テーブルimage_promptsを作成
 python use_sql.py
 
-# 
+# 下記URLでAPIを使用
 http://localhost:8000/docs
 
 # 終了
