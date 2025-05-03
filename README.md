@@ -12,6 +12,9 @@ source [仮想環境名]/bin/activate
 # パッケージのインストール
 pip install -r app/requirements.txt
 
+# ボリュームを作成
+docker volume create --name=volume-mysql
+
 # 開始
 sh start.sh
 
