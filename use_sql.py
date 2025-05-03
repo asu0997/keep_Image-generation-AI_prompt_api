@@ -1,7 +1,6 @@
 import mysql.connector
 
 
-
 def use_sql(sql: int):
     # コネクションの作成
     conn = mysql.connector.connect(
